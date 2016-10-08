@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1A8DF81DA8BACE004E72F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A8DF71DA8BACE004E72F1 /* AppDelegate.m */; };
+		3F1A8DFB1DA8BACE004E72F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A8DFA1DA8BACE004E72F1 /* main.m */; };
+		3F1A8DFE1DA8BACE004E72F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A8DFD1DA8BACE004E72F1 /* ViewController.m */; };
+		3F1A8E001DA8BACE004E72F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A8DFF1DA8BACE004E72F1 /* Assets.xcassets */; };
+		3F1A8E031DA8BACE004E72F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1A8E011DA8BACE004E72F1 /* Main.storyboard */; };
+		3F1A8E0E1DA8BACE004E72F1 /* DeleteLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A8E0D1DA8BACE004E72F1 /* DeleteLineTests.m */; };
+		3F1A8E191DA8BACE004E72F1 /* DeleteLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A8E181DA8BACE004E72F1 /* DeleteLineUITests.m */; };
+		3F1A8E2D1DA8BADA004E72F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1A8E2C1DA8BADA004E72F1 /* Cocoa.framework */; };
+		3F1A8E331DA8BADA004E72F1 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A8E321DA8BADA004E72F1 /* SourceEditorExtension.m */; };
+		3F1A8E361DA8BADA004E72F1 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A8E351DA8BADA004E72F1 /* SourceEditorCommand.m */; };
+		3F1A8E3A1DA8BADA004E72F1 /* DeleteLinePlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F1A8E2A1DA8BADA004E72F1 /* DeleteLinePlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F1A8E0A1DA8BACE004E72F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1A8DEB1DA8BACE004E72F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1A8DF21DA8BACE004E72F1;
+			remoteInfo = DeleteLine;
+		};
+		3F1A8E151DA8BACE004E72F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1A8DEB1DA8BACE004E72F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1A8DF21DA8BACE004E72F1;
+			remoteInfo = DeleteLine;
+		};
+		3F1A8E381DA8BADA004E72F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1A8DEB1DA8BACE004E72F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1A8E291DA8BADA004E72F1;
+			remoteInfo = DeleteLinePlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F1A8E3E1DA8BADA004E72F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3F1A8E3A1DA8BADA004E72F1 /* DeleteLinePlugin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F1A8DF31DA8BACE004E72F1 /* DeleteLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeleteLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1A8DF61DA8BACE004E72F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F1A8DF71DA8BACE004E72F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F1A8DFA1DA8BACE004E72F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F1A8DFC1DA8BACE004E72F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F1A8DFD1DA8BACE004E72F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F1A8DFF1DA8BACE004E72F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F1A8E021DA8BACE004E72F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F1A8E041DA8BACE004E72F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1A8E091DA8BACE004E72F1 /* DeleteLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleteLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1A8E0D1DA8BACE004E72F1 /* DeleteLineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteLineTests.m; sourceTree = "<group>"; };
+		3F1A8E0F1DA8BACE004E72F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1A8E141DA8BACE004E72F1 /* DeleteLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeleteLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1A8E181DA8BACE004E72F1 /* DeleteLineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteLineUITests.m; sourceTree = "<group>"; };
+		3F1A8E1A1DA8BACE004E72F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1A8E2A1DA8BADA004E72F1 /* DeleteLinePlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeleteLinePlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1A8E2C1DA8BADA004E72F1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3F1A8E301DA8BADA004E72F1 /* DeleteLinePlugin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeleteLinePlugin.entitlements; sourceTree = "<group>"; };
+		3F1A8E311DA8BADA004E72F1 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		3F1A8E321DA8BADA004E72F1 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		3F1A8E341DA8BADA004E72F1 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		3F1A8E351DA8BADA004E72F1 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		3F1A8E371DA8BADA004E72F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F1A8DF01DA8BACE004E72F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E061DA8BACE004E72F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E111DA8BACE004E72F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E271DA8BADA004E72F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A8E2D1DA8BADA004E72F1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1A8DEA1DA8BACE004E72F1 = {
+			isa = PBXGroup;
+			children = (
+				3F1A8DF51DA8BACE004E72F1 /* DeleteLine */,
+				3F1A8E0C1DA8BACE004E72F1 /* DeleteLineTests */,
+				3F1A8E171DA8BACE004E72F1 /* DeleteLineUITests */,
+				3F1A8E2E1DA8BADA004E72F1 /* DeleteLinePlugin */,
+				3F1A8E2B1DA8BADA004E72F1 /* Frameworks */,
+				3F1A8DF41DA8BACE004E72F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F1A8DF41DA8BACE004E72F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8DF31DA8BACE004E72F1 /* DeleteLine.app */,
+				3F1A8E091DA8BACE004E72F1 /* DeleteLineTests.xctest */,
+				3F1A8E141DA8BACE004E72F1 /* DeleteLineUITests.xctest */,
+				3F1A8E2A1DA8BADA004E72F1 /* DeleteLinePlugin.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F1A8DF51DA8BACE004E72F1 /* DeleteLine */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8DF61DA8BACE004E72F1 /* AppDelegate.h */,
+				3F1A8DF71DA8BACE004E72F1 /* AppDelegate.m */,
+				3F1A8DFC1DA8BACE004E72F1 /* ViewController.h */,
+				3F1A8DFD1DA8BACE004E72F1 /* ViewController.m */,
+				3F1A8DFF1DA8BACE004E72F1 /* Assets.xcassets */,
+				3F1A8E011DA8BACE004E72F1 /* Main.storyboard */,
+				3F1A8E041DA8BACE004E72F1 /* Info.plist */,
+				3F1A8DF91DA8BACE004E72F1 /* Supporting Files */,
+			);
+			path = DeleteLine;
+			sourceTree = "<group>";
+		};
+		3F1A8DF91DA8BACE004E72F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8DFA1DA8BACE004E72F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F1A8E0C1DA8BACE004E72F1 /* DeleteLineTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8E0D1DA8BACE004E72F1 /* DeleteLineTests.m */,
+				3F1A8E0F1DA8BACE004E72F1 /* Info.plist */,
+			);
+			path = DeleteLineTests;
+			sourceTree = "<group>";
+		};
+		3F1A8E171DA8BACE004E72F1 /* DeleteLineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8E181DA8BACE004E72F1 /* DeleteLineUITests.m */,
+				3F1A8E1A1DA8BACE004E72F1 /* Info.plist */,
+			);
+			path = DeleteLineUITests;
+			sourceTree = "<group>";
+		};
+		3F1A8E2B1DA8BADA004E72F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8E2C1DA8BADA004E72F1 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F1A8E2E1DA8BADA004E72F1 /* DeleteLinePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8E311DA8BADA004E72F1 /* SourceEditorExtension.h */,
+				3F1A8E321DA8BADA004E72F1 /* SourceEditorExtension.m */,
+				3F1A8E341DA8BADA004E72F1 /* SourceEditorCommand.h */,
+				3F1A8E351DA8BADA004E72F1 /* SourceEditorCommand.m */,
+				3F1A8E371DA8BADA004E72F1 /* Info.plist */,
+				3F1A8E2F1DA8BADA004E72F1 /* Supporting Files */,
+			);
+			path = DeleteLinePlugin;
+			sourceTree = "<group>";
+		};
+		3F1A8E2F1DA8BADA004E72F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A8E301DA8BADA004E72F1 /* DeleteLinePlugin.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F1A8DF21DA8BACE004E72F1 /* DeleteLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1A8E1D1DA8BACE004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLine" */;
+			buildPhases = (
+				3F1A8DEF1DA8BACE004E72F1 /* Sources */,
+				3F1A8DF01DA8BACE004E72F1 /* Frameworks */,
+				3F1A8DF11DA8BACE004E72F1 /* Resources */,
+				3F1A8E3E1DA8BADA004E72F1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1A8E391DA8BADA004E72F1 /* PBXTargetDependency */,
+			);
+			name = DeleteLine;
+			productName = DeleteLine;
+			productReference = 3F1A8DF31DA8BACE004E72F1 /* DeleteLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F1A8E081DA8BACE004E72F1 /* DeleteLineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1A8E201DA8BACE004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLineTests" */;
+			buildPhases = (
+				3F1A8E051DA8BACE004E72F1 /* Sources */,
+				3F1A8E061DA8BACE004E72F1 /* Frameworks */,
+				3F1A8E071DA8BACE004E72F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1A8E0B1DA8BACE004E72F1 /* PBXTargetDependency */,
+			);
+			name = DeleteLineTests;
+			productName = DeleteLineTests;
+			productReference = 3F1A8E091DA8BACE004E72F1 /* DeleteLineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F1A8E131DA8BACE004E72F1 /* DeleteLineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1A8E231DA8BACE004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLineUITests" */;
+			buildPhases = (
+				3F1A8E101DA8BACE004E72F1 /* Sources */,
+				3F1A8E111DA8BACE004E72F1 /* Frameworks */,
+				3F1A8E121DA8BACE004E72F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1A8E161DA8BACE004E72F1 /* PBXTargetDependency */,
+			);
+			name = DeleteLineUITests;
+			productName = DeleteLineUITests;
+			productReference = 3F1A8E141DA8BACE004E72F1 /* DeleteLineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3F1A8E291DA8BADA004E72F1 /* DeleteLinePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1A8E3B1DA8BADA004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLinePlugin" */;
+			buildPhases = (
+				3F1A8E261DA8BADA004E72F1 /* Sources */,
+				3F1A8E271DA8BADA004E72F1 /* Frameworks */,
+				3F1A8E281DA8BADA004E72F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeleteLinePlugin;
+			productName = DeleteLinePlugin;
+			productReference = 3F1A8E2A1DA8BADA004E72F1 /* DeleteLinePlugin.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F1A8DEB1DA8BACE004E72F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = catch;
+				TargetAttributes = {
+					3F1A8DF21DA8BACE004E72F1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWN8AWFG9J;
+						ProvisioningStyle = Automatic;
+					};
+					3F1A8E081DA8BACE004E72F1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWN8AWFG9J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F1A8DF21DA8BACE004E72F1;
+					};
+					3F1A8E131DA8BACE004E72F1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWN8AWFG9J;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F1A8DF21DA8BACE004E72F1;
+					};
+					3F1A8E291DA8BADA004E72F1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWN8AWFG9J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F1A8DEE1DA8BACE004E72F1 /* Build configuration list for PBXProject "DeleteLine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F1A8DEA1DA8BACE004E72F1;
+			productRefGroup = 3F1A8DF41DA8BACE004E72F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F1A8DF21DA8BACE004E72F1 /* DeleteLine */,
+				3F1A8E081DA8BACE004E72F1 /* DeleteLineTests */,
+				3F1A8E131DA8BACE004E72F1 /* DeleteLineUITests */,
+				3F1A8E291DA8BADA004E72F1 /* DeleteLinePlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F1A8DF11DA8BACE004E72F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A8E001DA8BACE004E72F1 /* Assets.xcassets in Resources */,
+				3F1A8E031DA8BACE004E72F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E071DA8BACE004E72F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E121DA8BACE004E72F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E281DA8BADA004E72F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F1A8DEF1DA8BACE004E72F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A8DFE1DA8BACE004E72F1 /* ViewController.m in Sources */,
+				3F1A8DFB1DA8BACE004E72F1 /* main.m in Sources */,
+				3F1A8DF81DA8BACE004E72F1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E051DA8BACE004E72F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A8E0E1DA8BACE004E72F1 /* DeleteLineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E101DA8BACE004E72F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A8E191DA8BACE004E72F1 /* DeleteLineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1A8E261DA8BADA004E72F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1A8E331DA8BADA004E72F1 /* SourceEditorExtension.m in Sources */,
+				3F1A8E361DA8BADA004E72F1 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F1A8E0B1DA8BACE004E72F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1A8DF21DA8BACE004E72F1 /* DeleteLine */;
+			targetProxy = 3F1A8E0A1DA8BACE004E72F1 /* PBXContainerItemProxy */;
+		};
+		3F1A8E161DA8BACE004E72F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1A8DF21DA8BACE004E72F1 /* DeleteLine */;
+			targetProxy = 3F1A8E151DA8BACE004E72F1 /* PBXContainerItemProxy */;
+		};
+		3F1A8E391DA8BADA004E72F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1A8E291DA8BADA004E72F1 /* DeleteLinePlugin */;
+			targetProxy = 3F1A8E381DA8BADA004E72F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F1A8E011DA8BACE004E72F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1A8E021DA8BACE004E72F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F1A8E1B1DA8BACE004E72F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3F1A8E1C1DA8BACE004E72F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3F1A8E1E1DA8BACE004E72F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F1A8E1F1DA8BACE004E72F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F1A8E211DA8BACE004E72F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeleteLine.app/Contents/MacOS/DeleteLine";
+			};
+			name = Debug;
+		};
+		3F1A8E221DA8BACE004E72F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeleteLine.app/Contents/MacOS/DeleteLine";
+			};
+			name = Release;
+		};
+		3F1A8E241DA8BACE004E72F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeleteLine;
+			};
+			name = Debug;
+		};
+		3F1A8E251DA8BACE004E72F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeleteLine;
+			};
+			name = Release;
+		};
+		3F1A8E3C1DA8BADA004E72F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeleteLinePlugin/DeleteLinePlugin.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLinePlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLine.DeleteLinePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3F1A8E3D1DA8BADA004E72F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeleteLinePlugin/DeleteLinePlugin.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XWN8AWFG9J;
+				INFOPLIST_FILE = DeleteLinePlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catch.DeleteLine.DeleteLinePlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F1A8DEE1DA8BACE004E72F1 /* Build configuration list for PBXProject "DeleteLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A8E1B1DA8BACE004E72F1 /* Debug */,
+				3F1A8E1C1DA8BACE004E72F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1A8E1D1DA8BACE004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A8E1E1DA8BACE004E72F1 /* Debug */,
+				3F1A8E1F1DA8BACE004E72F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1A8E201DA8BACE004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A8E211DA8BACE004E72F1 /* Debug */,
+				3F1A8E221DA8BACE004E72F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1A8E231DA8BACE004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A8E241DA8BACE004E72F1 /* Debug */,
+				3F1A8E251DA8BACE004E72F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1A8E3B1DA8BADA004E72F1 /* Build configuration list for PBXNativeTarget "DeleteLinePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1A8E3C1DA8BADA004E72F1 /* Debug */,
+				3F1A8E3D1DA8BADA004E72F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F1A8DEB1DA8BACE004E72F1 /* Project object */;
+}
